@@ -60,6 +60,79 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-button">
+          <svg width="24" height="24">
+            <use href="./images/icons.svg#icon-menu-button"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu">
+        <div>
+          <button type="button" class="close-button">
+            <svg class="close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+          <ul class="menu-list">
+            <li class="menu-item">
+              <a href="./index.html" class="menu-item-link menu-active"
+                >Studio</a
+              >
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">Portfolio</a>
+            </li>
+            <li class="menu-item">
+              <a href="" class="menu-item-link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <address class="menu-address">
+            <ul class="menu-address-list">
+              <li>
+                <a href="tel:+110001111111" class="menu-address-item"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+              <li>
+                <a href="mailto:info@devstudio.com" class="menu-address-item"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+          <ul class="menu-icon-container">
+            <li class="icon-item">
+              <a class="icon-link" href="">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a class="icon-link" href="">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a class="icon-link" href="">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="icon-item">
+              <a class="icon-link" href="">
+                <svg class="icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -132,6 +205,7 @@
           <ul class="team-list">
             <li class="team-item">
               <img
+                srcset="./images/mark.jpg 1x, ./images/mark2x.jpg 2x"
                 src="./images/mark.jpg"
                 alt="Mark's picture"
                 width="264"
@@ -174,6 +248,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/tom.jpg 1x, ./images/tom2x.jpg 2x"
                 src="./images/tom.jpg"
                 alt="Tom's picture"
                 width="264"
@@ -216,6 +291,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/camila.jpg 1x, ./images/camila2x.jpg 2x"
                 src="./images/camila.jpg"
                 alt="Camila's picture"
                 width="264"
@@ -258,6 +334,7 @@
             </li>
             <li class="team-item">
               <img
+                srcset="./images/dan.jpg 1x, ./images/dan2x.jpg 2x"
                 src="./images/dan.jpg"
                 alt="Daniel's picture"
                 width="264"
@@ -496,7 +573,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop is-open">
+    <div class="backdrop">
       <div class="modal">
         <button type="button" class="close-button">
           <svg class="close-icon" width="8" height="8">
@@ -570,11 +647,13 @@
             <label for="user-privacy" class="checkbox-text">
               <span class="checkbox-icon-span">
                 <svg class="checkbox-icon" width="10" height="8">
-                  <use href="./images/icons.svg#icon-checkbox-onclick"></use>
+                  <use href="./images/icons.svg#icon-checkbox"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="privacy-policy-link" href="">Privacy Policy</a>
+              <p class="privacy-policy-text">
+                I accept the terms and conditions of the
+                <a class="privacy-policy-link" href="">Privacy Policy</a>
+              </p>
             </label>
           </div>
           <button type="submit" class="modal-button">Send</button>
